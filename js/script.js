@@ -5,6 +5,18 @@ var modalConfirm = function(callback){
     $("#btn-callback-carousel2").on("click", function(){
       $("#callback-modal").modal('show');
     });
+    $("#btn-callback-carousel3").on("click", function(){
+      $("#callback-modal").modal('show');
+    });
+    $("#btn-callback-carousel4").on("click", function(){
+      $("#callback-modal").modal('show');
+    });
+    $("#btn-callback-carousel5").on("click", function(){
+      $("#callback-modal").modal('show');
+    });
+    $("#btn-callback-carousel6").on("click", function(){
+      $("#callback-modal").modal('show');
+    });
 
     $("#btn-callback-carousel-ok").on("click", function(){
       callback(true);

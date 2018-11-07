@@ -1,19 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>"Авто Комфорт" Центр дополнительного оборудования г.Сургут | Webasto, Hydronic, Starline, Pandora, сигнализация, автозвук, шумоизоляция, замена лобового стекла, ремонт сколов</title>
+    <title>Авто Комфорт г.Сургут установка Webasto(Вебасто), Hydronic(Гидроник), сигнализации, автозвук, шумоизоляции, замена лобового стекла</title>
+    <meta name="description" content="Центр дополнительного оборудования 'Авто Комфорт' г.Сургут производит установку предпусковых подогоревателей Webasto(Вебасто), Hydronic(Гидроник), а также их диагностику и ремонт, установку сигнализаций, замену лобового стекла, ремонт трещин, шумоизоляцию салона, тонирование стекол и многое другое">
+    <meta name="geo.region" content="RU-KHM" />
+    <meta name="geo.placename" content="Сургут" />
+    <meta name="geo.position" content="61.267982;73.394114" />
+    <meta name="ICBM" content="61.267982, 73.394114" />
+    <meta name="robots" content="index,follow">
+    <meta name="yandex-verification" content=" "/>
     <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/aos.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/font-awesome.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
-
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
@@ -33,12 +38,19 @@
                   center: [61.26801, 73.394186],
                   zoom: 17
               });
-              DG.marker([61.26801, 73.394186]).addTo(map).bindPopup('<b>Авто Комфорт</b><br><b style="color:lightgray;">(3462) 91-00-51</b><br><p style="color:yellow;">Сургут, Профсоюзов, 25 к3,<br>«Буровик 21» бокс 5А</p>');
+              // DG.marker([61.26801, 73.394186]).addTo(map).bindPopup('<b>Авто Комфорт</b><br><b style="color:lightgray;">(3462) 91-00-51</b><br><p style="color:yellow;">Сургут, Профсоюзов, 25 к3,<br>«Буровик 21» бокс 5А</p>');
+              DG.popup().setLatLng(map.getCenter()).setContent('<b>Авто Комфорт</b><br><b style="color:lightgray;">(3462) 91-00-51</b><br><p style="color:yellow;">Сургут, Профсоюзов, 25 к3,<br>«Буровик 21» бокс 5А</p>').openOn(map);
           });
         </script>  
   </head>
 
   <body>
+    <div class="call-back-btn" id="btn-callback-carousel3">
+        <div class="pulse1"></div>
+        <div class="pulse2"></div>
+        <div class="profilepicture"><img src="img/phone.png" width="100%" height="100%"></div>
+    </div>
+
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -121,23 +133,41 @@
               <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <h4 class="modal-title" id="myModalLabel">Обратный звонок</h4>
             </div>
-            <div class="modal-body">
-                <form class="form-inline">
-                    <div class="form-group">
-                      <label class="sr-only" for="inputName">Имя</label>
-                      <input type="text" class="form-control input-lg" id="inputName" placeholder="Имя">
-                    </div>
-                    <div class="form-group">
-                      <label class="sr-only" for="inputNumber">Телефон</label>
-                      <input type="text" class="form-control input-lg" id="inputNumber" placeholder="номер" pattern="[789][0-9]{9}">
+
+            <div data-form-type="formoid">
+                <form class="form-inline" action="https://mobirise.com/" method="post" data-form-title="Заявка от посетителя сайта АВТОКОМФОРТ г.Сургут" onsubmit="$('#callback-modal').modal('hide');$('#success-modal').modal('show');">            
+                    <input type="hidden" data-form-email="true" value="cwnS1+U3WxEMHBBQFAmG9i8rEoY5reACooVQRzuHf88OPgMi3B4hmOTkT8yx5Z4peIxb2he4ZMQtSsHZ3RKOIYhoUBpbcqV4uNisSPsmVHfNbMx/nLFBQRcrGEcoiHid">
+
+                    <div class="modal-body">
+                        <div class="form-inline">
+                            <div class="form-group col-md-6" style="padding: 0;" data-for="name">
+                              <label class="sr-only" for="inputName">Имя</label>
+                              <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                <input type="text" class="form-control input-lg" id="inputName" placeholder="Имя" name="name"> 
+                              </div>
+                            </div>
+
+                            <div class="form-group col-md-6" style="padding: 0;padding-left: 5px;" data-for="phone">
+                              <label class="sr-only" for="inputNumber">Телефон</label>  
+                              <div class="input-group">
+                                <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                <input type="text" class="form-control input-lg" id="inputNumber" placeholder="номер" pattern="[789][0-9]{9}" name="phone">
+                              </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-md-12">
+                              <div class="text-center" style="margin-top: 10px;">
+                                  <button type="submit" id="btn-callback-carousel-ok" class="btn btn-primary btn-lg" style="font-size: 1.7rem;"><i class="fa fa-check fa-fw"></i> ЗАПИСАТЬСЯ</button>
+                              </div>
+                          </div>
+                        </div>
                     </div>
                 </form>
             </div>
-            <div class="modal-footer">
-              <div class="text-center">
-                <button type="submit" id="btn-callback-carousel-ok" class="btn btn-primary">ЗАПИСАТЬСЯ</button>
-              </div>
-            </div>
+
           </div>
         </div>
       </div>
@@ -166,7 +196,7 @@
                   </div>
                   <br>
                   <div class="col-md-8 animated fadeInLeft">
-                      <p><a class="btn btn-primary btn-lg" href="#" id="btn-callback-carousel">
+                      <p><a class="btn btn-primary btn-lg" id="btn-callback-carousel">
                           Заказать звонок &nbsp; <i class="fa fa-phone"></i>
                       </a></p>
                   </div>
@@ -308,21 +338,27 @@
     </section>
 
     <section class="section-secondary slogan" id="contact-section">
-      <div class="fix-padding" data-aos="zoom-in-up">
-        <h1 class="fontCarousel">ЗАПИШИТЕСЬ ПРЯМО СЕЙЧАС</h1>
-        <form class="form-inline vcenter">
-          <div class="form-group">
-                <label class="sr-only" for="name">Имя</label>
-                <input type="text" class="form-control input-lg" id="name" placeholder="Имя">
-          </div>
-          <div class="form-group">
-                <label class="sr-only" for="phone">Телефон</label>
-                <input type="text" class="form-control input-lg" id="phone" placeholder="номер" pattern="[789][0-9]{9}">
-          </div>
-            <input type="button" class="btn btn-primary btn-lg" value="ЗАПИСАТЬСЯ" onclick="sendEmailCallBack('name','phone', true)"/>
-        </form>
-        <br><br><br>
-      </div>
+        <div data-form-type="formoid">
+          <form class="form-inline" action="https://mobirise.com/" method="post" data-form-title="Заявка от посетителя сайта АВТОКОМФОРТ г.Сургут" onsubmit="$('#success-modal').modal('show');">            
+              <input type="hidden" data-form-email="true" value="cwnS1+U3WxEMHBBQFAmG9i8rEoY5reACooVQRzuHf88OPgMi3B4hmOTkT8yx5Z4peIxb2he4ZMQtSsHZ3RKOIYhoUBpbcqV4uNisSPsmVHfNbMx/nLFBQRcrGEcoiHid">
+
+              <div class="fix-padding" data-aos="zoom-in-up">
+                  <h1 class="fontCarousel">ЗАПИШИТЕСЬ ПРЯМО СЕЙЧАС</h1>
+                  <form class="form-inline vcenter">
+                    <div class="form-group" data-for="name">
+                          <label class="sr-only" for="name">Имя</label>
+                          <input type="text" class="form-control input-lg" id="name" placeholder="Имя" name="name">
+                    </div>
+                    <div class="form-group" data-for="phone">
+                          <label class="sr-only" for="phone">Телефон</label>
+                          <input type="text" class="form-control input-lg" id="phone" placeholder="номер" pattern="[789][0-9]{9}" name="phone">
+                    </div>
+                      <input type="submit" class="btn btn-primary btn-lg" value="ЗАПИСАТЬСЯ"/>
+                  </form>
+                  <br><br><br>
+                </div>
+          </form>
+        </div>
     </section>
     
   <section class="section-map" >
@@ -359,22 +395,14 @@
           <p>&copy; 2017 "Авто Комфорт" Центр дополнительного оборудования</p>
           <p>т.(3462) 91-00-51, (3462) 60-56-72, (3462) 60-56-71</p>
           <p>г.Сургут, ул.Профсоюзов, 25 к3, бокс 5А</p>
-          <p class="developer">Разработка сайтов <a href="http://kedrovski.com">kedrovski.com</a></p>
           <br><br>
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.js"></script>
-    
     <script src="js/aos.js"></script>
-    
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
-    <script type="text/javascript">
-       (function(){
-          emailjs.init("user_u2rm0i50T23yxNX7G8Eba");
-       })();
-    </script>
     <script src="js/script.js"></script>
+    <script src="js/formoid/formoid.min.js"></script>
     
     <script>
         AOS.init();
