@@ -11,7 +11,6 @@
     <meta name="geo.position" content="61.267982;73.394114" />
     <meta name="ICBM" content="61.267982, 73.394114" />
     <meta name="robots" content="index,follow">
-    <meta name="yandex-verification" content=" " />
     <link href="http://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -46,7 +45,69 @@
   </head>
 
   <body>
-      <div class="call-back-btn" id="btn-callback-carousel4">
+      <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-modalModalLabel" aria-hidden="true" id="success-modal">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center" id="success-modalLabel">Успешно отправлено</h4>
+              </div>
+              <div class="modal-footer">
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary" onmousedown="$('#success-modal').modal('hide');">OK</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" id="callback-modal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <h4 class="modal-title" id="myModalLabel">Обратный звонок</h4>
+                </div>
+    
+                <div data-form-type="formoid">
+                    <form class="form-inline" action="https://mobirise.com/" method="post" data-form-title="Заявка от посетителя сайта АВТОКОМФОРТ г.Сургут" onsubmit="$('#callback-modal').modal('hide');$('#success-modal').modal('show');">            
+                        <input type="hidden" data-form-email="true" value="cwnS1+U3WxEMHBBQFAmG9i8rEoY5reACooVQRzuHf88OPgMi3B4hmOTkT8yx5Z4peIxb2he4ZMQtSsHZ3RKOIYhoUBpbcqV4uNisSPsmVHfNbMx/nLFBQRcrGEcoiHid">
+    
+                        <div class="modal-body">
+                            <div class="form-inline">
+                                <div class="form-group col-md-6" style="padding: 0;" data-for="name">
+                                  <label class="sr-only" for="inputName">Имя</label>
+                                  <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-user"></i></div>
+                                    <input type="text" class="form-control input-lg" id="inputName" placeholder="Имя" name="name" data-form-field="Имя"> 
+                                  </div>
+                                </div>
+    
+                                <div class="form-group col-md-6" style="padding: 0;padding-left: 5px;" data-for="phone">
+                                  <label class="sr-only" for="inputNumber">Телефон</label>  
+                                  <div class="input-group">
+                                    <div class="input-group-addon"><i class="fa fa-phone"></i></div>
+                                    <input type="text" class="form-control input-lg" id="inputNumber" name="phone" data-form-field="Телефон" placeholder="+7 (___) ___-__-__" onclick="$('#inputNumber').val('+7');" required>
+                                  </div>
+                                </div>
+                            </div>
+    
+                            <div class="row">
+                              <div class="col-md-12">
+                                  <div class="text-center" style="margin-top: 10px;">
+                                      <button type="submit" class="btn btn-primary btn-lg" style="font-size: 1.7rem;"><i class="fa fa-check fa-fw"></i> ЗАПИСАТЬСЯ</button>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+    
+              </div>
+            </div>
+          </div>
+
+      <div class="call-back-btn" onmousedown="$('#callback-modal').modal('show');">
           <div class="pulse1"></div>
           <div class="pulse2"></div>
           <div class="profilepicture"><img src="img/phone.png" width="100%" height="100%"></div>
@@ -78,38 +139,6 @@
           </div>
         </nav>
 
-        <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="success-modalModalLabel" aria-hidden="true" id="success-modal">
-            <div class="modal-dialog modal-sm">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                  <h4 class="modal-title text-center" id="success-modalLabel">Успешно отправлено</h4>
-                </div>
-                <div class="modal-footer">
-                  <div class="text-center">
-                  <button type="button" class="btn btn-primary" id="success-modal-ok">OK</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="errFieldsModalLabel" aria-hidden="true" id="errFields-modal">
-              <div class="modal-dialog modal-sm">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                    <h4 class="modal-title text-center" id="errFieldsLabel">Нужно заполнить все поля!</h4>
-                  </div>
-                  <div class="modal-footer">
-                    <div class="text-center">
-                    <button type="button" class="btn btn-primary" id="errFields-modal-ok">OK</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
   <section class="section-title">
     <div class="container">
       <h1>КОНТАКТЫ<small> Где мы находимся?</small></h1>
@@ -124,22 +153,26 @@
           <body>
             <div id="map" style="width:100%; height:400px"></div>
           </body>
+          <div data-form-type="formoid">
           <h3>Есть вопросы? Пишите нам!</h3>
-                <form>
-                  <div class="form-group">
+          <form action="https://mobirise.com/" method="post" data-form-title="Заявка от посетителя сайта АВТОКОМФОРТ г.Сургут" onsubmit="$('#success-modal').modal('show');">            
+            <input type="hidden" data-form-email="true" value="cwnS1+U3WxEMHBBQFAmG9i8rEoY5reACooVQRzuHf88OPgMi3B4hmOTkT8yx5Z4peIxb2he4ZMQtSsHZ3RKOIYhoUBpbcqV4uNisSPsmVHfNbMx/nLFBQRcrGEcoiHid">
+
+                  <div class="form-group" data-for="name">
                     <label>Имя</label>
-                    <input type="text" class="form-control" id="nameUser">
+                    <input type="text" class="form-control" id="name" name="name" data-form-field="Имя" required>
                   </div>
-                  <div class="form-group">
+                  <div class="form-group" data-for="email">
                     <label>Email</label>
-                    <input type="email" class="form-control" id="emailUser">
+                    <input type="email" class="form-control" id="email" name="email" data-form-field="Эл.почта">
                   </div>
-                    <div class="form-group">
+                    <div class="form-group" data-for="message">
                     <label>Сообщение</label>
-                   <textarea class="form-control" id="messageUser" rows="6"></textarea>
+                   <textarea class="form-control" rows="6" id="message" name="message" data-form-field="Сообщение" required></textarea>
                   </div>
-                  <button type="button" class="btn btn-primary" onclick="sendEmailQuestions()">Отправить</button>
-                </form>
+                  <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+            </div>
         </div>
         <div class="col-md-4">
           <h2>НАШИ КОНТАКТЫ</h2>
